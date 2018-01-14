@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>notes</title>
+</head>
+<body>
+
+<ul>
+	<li>Setup Github and SSH</li>
+		<ul>
+			<li>Linux and Mac</li>
+			<p>ssh-keygen -t rsa -C "playground@nnn.com</p>
+			<p>cat id_rsa pub</p>
+			<p>copy and paste in settings -> ssh settings</p>
+			<li>Windows</li>
+			<p>Git Install -- defaults</p>
+			<p>cd ~</p>
+			<p>mkdir -p .ssh</p>
+			<p>chmod 700 .ssh</p>
+			<p>ssh-keygen -t rsa -C "playground@nnn.com"</p>
+			<p>leave blank</p>
+			<p>copy the id_rsa.pub key in github</p>
+			<p>thats it</p>
+		</ul>
+	<li>
+		Basic Git Commands - create a branch - make changes - publish - merge to master
+		<ul>
+			<li>
+				<p>git checkout test : changes to test branch</p>
+				<p>git checkout -b test2 : creates and changes to test2 branch</p>
+				<p>git checkout master - git merge test : first goes to the master branch and merges the test to that </p>
+			</li>
+		</ul>
+		
+	<li>Docker ToolBox</li>
+	<li>MysqlWorkbench</li>
+	<li>Setup Docker Builds
+		<ul>
+			<li>Create a docker file based on an image from https://hub.docker.com/</li>
+			<li<span style ="color:red">revisit this docker configuration</span></li>
+			<li>
+				Here's a workaround that solves this *&^%$%#@!
+
+Download the boot2docker.iso file manually by going to https://api.github.com/repos/boot2docker/boot2docker/releases/latest then clicking on the html_url and finally choosing to download the file.
+
+Once you get the file go and place it manually in /Users/{user}/.docker/machine/cache/
+
+Finally re-run this command docker-machine create --driver virtualbox default
+			</li>
+		</ul>
+	</li>
+	<li>
+		Automation Script for Windows
+		<ul>
+			<li>
+				
+			</li>
+		</ul>
+	</li>
+		
+	</li>	
+</ul>	
+
+
+
+</body>
+</html>
