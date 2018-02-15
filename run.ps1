@@ -68,5 +68,5 @@ If($Args[0] -eq "setup") {
     init;
     docker exec -it $(docker-compose -f $COMPOSE_FILE ps -q playground) /bin/bash -c "cd /srv;forever restartall;"
 } Else {
-    echo "invalid run command"
+    echo "invalid run command [setup, destroy, shell, restart"
 }
